@@ -1,26 +1,23 @@
+const Student = require('../database/Student');
+
 const getAllStudents = () => {
-
-  return;
+    return Student.getAllStudents();
 };
 
-const getStudentById = () => {
-
-  return;
+const getStudentById = (id) => {
+    return Student.getStudentById(id);
 };
 
-const createStudent = () => {
-
-  return;
+const createStudent = (studentData) => {
+    return Student.createStudent(studentData);
 };
 
-const updateStudent = () => {
-
-  return;
+const updateStudent = (id, studentData) => {
+    return Student.updateStudent(id, studentData);
 };
 
-const deleteStudent = () => {
-
-  return;
+const deleteStudent = (id) => {
+    return Student.deleteStudent(id);
 };
 
 module.exports = {
