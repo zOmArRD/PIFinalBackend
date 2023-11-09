@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use("/api/v1/students", v1StudentRoutes);
 
+
 db.run(`
     CREATE TABLE IF NOT EXISTS students
     (
